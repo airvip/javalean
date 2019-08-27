@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ForDisplay",
+            "request": "launch",
+            "mainClass": "ForDisplay"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Season",
+            "request": "launch",
+            "mainClass": "Season"
+        }
+    ]
+}
