@@ -105,3 +105,11 @@ interface A
 
 内部类可以用 private 进行修饰
 
+
+# 压缩生成 jar 包
+sdqhw@airvip MINGW64 /e/workspace/javas/demo/day2 (master)
+$ jar -cf jarm.jar pack packa
+
+# 查看 jar 包内容
+sdqhw@airvip MINGW64 /e/workspace/javas/demo/day2 (master)
+$ jar -tf jarm.jar
