@@ -19,13 +19,29 @@
 
  class Single 
  {
-     private static final Single s = null;
+     private static Single s = null;
      private Single(){}
-     public static synchronized Single getInstance()
+     /* public static synchronized Single getInstance()
      {
          if(s == null)
          {
             s = new Single();
+         }
+        return s;
+     } */
+
+
+     public static Single getInstance()
+     {
+         if(s == null)
+         {
+            synchronized(Single.class)
+            {
+               if(s == null)
+               {
+                  s = new Single();
+               }
+            }
          }
         return s;
      }
@@ -36,6 +52,6 @@
  class SingleDemo 
  {
      public static void main(String[] args) {
-         
+         // todo
      }
  }
