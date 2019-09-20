@@ -31,6 +31,13 @@
  * 
  * 这就是多线程的一个特性：随机性，谁抢到谁执行，至于执行多长，cpu说了算。
  * 
+ * 
+ * 为什么要覆盖run方法呢？
+ * 
+ * Thread 类用于描述线程，该类就定义了一个功能，用于存储线程要运行的代码，该存储功能就是run方法。
+ * 
+ * 也就是说thread类中的run方法，用于存储线程要运行的代码。
+ * 
  */
 
 class Demo extends Thread 
@@ -52,8 +59,9 @@ class ThreadDemo1
         
 
 
-        Demo d = new Demo();
-        d.start();
+        Demo d = new Demo(); // 创建好一个线程
+        d.start(); // 开启线程并执行该线程的run方法
+        // d.run(); // 仅仅是对象调用方法，而线程创建了，并没有运行
 
         for (int i=0; i<60; i++)
         {
