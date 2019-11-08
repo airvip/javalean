@@ -28,7 +28,7 @@ class CollectionDemo
         bl.add("java05");
 
         // al.retainAll(bl);// 取交集，al之后保留bl中相同的元素
-        al.removeAll(bl);
+        al.removeAll(bl); // 删除交集中的元素
 
         sop("al:"+al); 
         sop("bl:"+bl); 
