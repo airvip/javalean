@@ -7,11 +7,45 @@ import java.util.*;
  * 
  * 2. 集合中存储的都是对象的引用（地址）
  * 
+ * 
+ * 什么是迭代器呢？
+ * 其实就是取出元素的方式
+ * 
  */
 class CollectionDemo
 {
     public static void main(String[] args) {
-        method_2();
+        method_get();
+
+    }
+
+    public static void method_get()
+    {
+        ArrayList al = new ArrayList();
+        al.add("java01");
+        al.add("java02");
+        al.add("java03");
+        al.add("java01");
+
+        Iterator it = al.iterator();
+
+        while(it.hasNext())
+        {
+            sop(it.next());
+        }
+
+        for(Iterator it1 = al.iterator(); it1.hasNext(); )
+        {
+            sop(it1.next());
+        }
+
+        // sop(it.next());
+        // sop(it.next());
+        // sop(it.hasNext());
+
+        sop(al);
+
+
 
     }
 
