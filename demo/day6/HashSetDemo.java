@@ -7,7 +7,7 @@ import java.util.*;
  *       |-- LinkedList:底层使用的是链表数据结构。特点：增删速度很快，查询稍慢
  *       |-- Vector:底层是数组数据结构。线程同步。被ArrayList替代了。
  *   |-- set：元素无序，元素不可以重复。Set集合的功能和Collection是一致的。
- *       |-- HashSet:底层数据结构是哈希表。
+ *       |-- HashSet:底层数据结构是哈希表。线程是非同步的。
  *             HashSet是如何保证元素唯一性的呢？
  *             是通过元素的两个方法，hashCode和equals来完成
  *             如果元素的 hashCode值相同，才会判断equals是否为true.
