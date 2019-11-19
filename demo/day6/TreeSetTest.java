@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * 练习：按照字符串长度排序。
+ * 字符串本身具备比较性，但是它的比较方式不是我们所需要的
+ * 这时就只能使用比较器。
+ */
+
 class TreeSetTest
 {
     public static void main(String[] args) {
