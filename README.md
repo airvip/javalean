@@ -4,6 +4,7 @@
 
 ```
 $ javac -encoding utf-8 FunDemo.java
+$ javac -Xlint:deprecation -encoding utf-8 GenericDemo2.java
 ```
 
 * 运行 java 字节码（.class文件）
@@ -113,3 +114,7 @@ $ jar -cf jarm.jar pack packa
 # 查看 jar 包内容
 sdqhw@airvip MINGW64 /e/workspace/javas/demo/day2 (master)
 $ jar -tf jarm.jar
+
+
+会报警告 int num = new Integer(o2.length()).compareTo(new Integer(o1.length()));
+推荐使用 int num = Integer.valueOf(o2.length()).compareTo(Integer.valueOf(o1.length()));
