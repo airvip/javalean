@@ -8,7 +8,35 @@ import java.util.*;
 class CollectionsDemo
 {
     public static void main(String[] args) {
-        sortDemo();
+        binarySearchDemo();
+    }
+
+    public static void binarySearchDemo()
+    {
+        List<String> list = new ArrayList<String>();
+        list.add("aaa");
+        list.add("bb");
+        list.add("t");
+        list.add("dd");
+        Collections.sort(list);
+
+        sop(list);
+
+        int index = Collections.binarySearch(list, "t");
+        sop("index:"+index);
+    }
+
+
+    public static void maxDemo()
+    {
+        List<String> list = new ArrayList<String>();
+        list.add("aaa");
+        list.add("bb");
+        list.add("t");
+        list.add("dd");
+
+        String max = Collections.max(list,new StrLenComparator());
+        sop("max="+max);
     }
 
     public static void sortDemo()
