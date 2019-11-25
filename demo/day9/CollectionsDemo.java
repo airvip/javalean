@@ -8,7 +8,23 @@ import java.util.*;
 class CollectionsDemo
 {
     public static void main(String[] args) {
-        sortDemo();
+        maxDemo();
+    }
+
+    public static void maxDemo()
+    {
+        List<String> list = new ArrayList<String>();
+        list.add("aaa");
+        list.add("bb");
+        list.add("t");
+        list.add("dd");
+        Collections.sort(list,new StrLenComparator());
+        sop(list);
+
+        String max = Collections.max(list,new StrLenComparator());
+
+        sop(max);
+
     }
 
     public static void sortDemo()
