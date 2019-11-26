@@ -1,4 +1,6 @@
 import java.util.*;
+
+import javax.lang.model.util.ElementScanner6;
 /**
  * 集合框架的工具类
  * Collections
@@ -22,8 +24,30 @@ class CollectionsDemo
 
         sop(list);
 
-        int index = Collections.binarySearch(list, "t");
+        // int index = Collections.binarySearch(list, "bt");
+        int index = Collections.binarySearch(list, "bt");
         sop("index:"+index);
+    }
+
+
+    public static int halfSearch(List<String> list, String key)
+    {
+        int max,min,mid;
+
+        for(max = list.size() - 1,min = 0; min <= max;)
+        {
+            mid = (min + max) >> 1;
+            String str = list.get(mid);
+            
+            int num = str.compareTo(key);
+            if(num > 0)
+                max = mid - 1;
+            else if(num < 0)
+                min = mid + 1;
+            else 
+                return mid;
+        }
+        return -min-1;
     }
 
 
