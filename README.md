@@ -11,6 +11,10 @@ $ javac -Xlint:deprecation -encoding utf-8 GenericDemo2.java
 
 ```
 $ java FunDemo
+Windows启动jvm可以添加 -Dfile.encoding=utf-8 这样测试运行 
+java -Dfile.encoding=utf-8 CalendarDemo.java  // java11之后可以java直接运行源文件
+多个参数
+java -Dfile.encoding=utf-8 -Dsun.jnu.encoding=utf-8 MathDemo.java
 ```
 
 * 重载：只看同名函数的参数列表
