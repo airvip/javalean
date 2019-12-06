@@ -19,13 +19,46 @@ import java.io.IOException;
  *     isAbsolute();
  * 
  * 4. 获取信息
+ *     getName();
+ *     getPath();
+ *     getParent()
+ *     getAbsolutePath()
+ *     long lastModified()
+ *     long length()
+ * 
  */
 public class FileDemo
 {
     public static void main(String[] args) throws IOException
     {
-        method_3();
+        method_5();
     }
+
+
+    public static void method_5() throws IOException
+    {
+        File f1 = new File("d:\\demo.log");
+        File f2 = new File("e:\\java.log");
+        
+        sop("rename:"+f2.renameTo(f1));
+        
+
+    }
+
+    public static void method_4() throws IOException
+    {
+        // File f1 = new File("java.log");
+        File f1 = new File("day12\\java.log");
+        
+        sop("getPath:"+f1.getPath());
+        sop("getAbsolutePath:"+f1.getAbsolutePath());
+        sop("getParent:"+f1.getParent()); // 返回的是绝对路径中的父目录,如果获取的是相对路径，返回 null。
+                                          // 如果相对路径中有上一层目录那么该目录就时候返回结果
+        sop("length:"+f1.length());
+        sop("lastModified:"+f1.lastModified());
+
+    }
+
 
     public static void method_3() throws IOException
     {
