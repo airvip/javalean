@@ -16,7 +16,26 @@ public class DataStreamDemo
     public static void main(String[] args) throws IOException
     {
         // writeData();
-        readData();
+        // readData();
+        // writeUtfDemo();
+        readUtfDemo();
+        
+    }
+
+
+    public static void writeUtfDemo() throws IOException
+    {
+        DataOutputStream dos = new DataOutputStream(new FileOutputStream("data.data"));
+        dos.writeUTF("你好");
+        dos.close();
+    }
+
+    public static void readUtfDemo() throws IOException
+    {
+        DataInputStream dis = new DataInputStream(new FileInputStream("data.data"));
+        String s = dis.readUTF();
+        dis.close();
+        System.out.println(s);
     }
 
 
