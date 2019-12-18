@@ -20,6 +20,7 @@ public class EncodeStreamDemo
         int len = isr.read(buf);
         String str = new String(buf, 0, len);
         System.out.println(str);
+        isr.close();
 
     }
 
