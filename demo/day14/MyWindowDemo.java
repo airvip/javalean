@@ -1,3 +1,4 @@
+package mymenu;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -110,5 +111,7 @@ public class MyWindowDemo
     public static void main(String[] args)
     {
         new MyWindowDemo();
+        // 打包成可执行文件  jar -cvfm my.jar 1.txt mymenu
+        //  Main-Class: mymenu.MyMenuDemo
     }
 }
