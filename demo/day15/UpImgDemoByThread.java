@@ -5,9 +5,37 @@ import java.net.*;
  {
     public static void main(String[] args) throws Exception
     {
+
+        if(args.length != 1)
+        {
+            System.out.println("please a imgae");
+            return ;
+        }
+
+
+
+        File file = new File(args[0]);
+        if(!(file.exists() && file.isFile()))
+        {
+            System.out.println("file is error");
+            return ;
+        }
+
+        if(file.getName().endsWith(".png") )
+        {
+            System.out.println("file must endswith png");
+            return ;
+        }
+
+        if(file.length() > 1024 * 1024 * 5 )
+        {
+            System.out.println("file larger");
+            return ;
+        }
+
         Socket s = new Socket("192.168.1.44", 10001);
 
-        FileInputStream fis = new FileInputStream("cimg.png");
+        FileInputStream fis = new FileInputStream(file);
 
         OutputStream out = s.getOutputStream();
 
