@@ -1,0 +1,12 @@
+2020-01-02 19:02:11,007 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11e21d0e: startup date [Thu Jan 02 19:02:10 CST 2020]; root of context hierarchy
+2020-01-02 19:02:11,100 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-context.xml]
+2020-01-02 19:02:11,521 INFO [wang.diff.hello.spring.MyTest] - info 级别的日志
+2020-01-02 19:02:11,522 WARN [wang.diff.hello.spring.MyTest] - warn 级别的日志
+2020-01-02 19:02:11,522 ERROR [wang.diff.hello.spring.MyTest] - error 级别的日志
+2020-01-02 19:02:11,524 INFO [wang.diff.hello.spring.MyTest] - message is : 测试
+2020-01-02 19:04:06,762 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11e21d0e: startup date [Thu Jan 02 19:04:06 CST 2020]; root of context hierarchy
+2020-01-02 19:04:06,836 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-context.xml]
+2020-01-02 19:04:07,191 INFO [wang.diff.hello.spring.MyTest] - info 级别的日志
+2020-01-02 19:04:07,191 WARN [wang.diff.hello.spring.MyTest] - warn 级别的日志
+2020-01-02 19:04:07,191 ERROR [wang.diff.hello.spring.MyTest] - error 级别的日志
+2020-01-02 19:04:07,193 INFO [wang.diff.hello.spring.MyTest] - message is : 测试
