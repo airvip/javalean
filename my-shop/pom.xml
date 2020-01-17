@@ -10,11 +10,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>my-shop-dependencies</module>
         <module>my-shop-commons</module>
-        <module>my-shop-domain</module>
-        <module>my-shop-web-admin</module>
-        <module>my-shop-web-ui</module>
-        <module>my-shop-web-api</module>
     </modules>
 </project>
